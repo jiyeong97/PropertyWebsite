@@ -1,0 +1,62 @@
+<!-- @name: Final Project-Phase2
+  @Course Code: SODV1201
+  @class: Software Development Diploma program.
+  @author: Rajnandani Manocha, Jiyeong Yun
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Owner Page</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/Icon.jpg">
+    </head>
+
+    <body>
+
+        <!--Header for contact owner page-->
+        <header>
+            <div class="title">
+                Owner Page
+            </div>
+        </header>
+
+        <div class="bodyDivOwner">
+            <div class="listInfo">
+                Details
+            </div>
+
+            <div id="propertyList"></div>
+
+            <div class="bodyDivCo">
+                <form class="searchbar">
+
+                    <!--Searchbar is added to make search according to address and then on the basis of address chosen, the contact info of that owner is displayed-->
+                    <select name="menu" id="menu" class="select">
+                        <option value="33 Mentos NW Calgary" selected="selected">33 Mentos NW Calgary</option>
+                        <option value="456 Mints SW Calgary" selected="selected">456 Mints SW Calgary</option>
+                        <option value="721 SourJelly SE Calgary" selected="selected">721 SourJelly SE Calgary</option>
+                        <option value="548 Febreze NE Calgary" selected="selected">548 Febreze NE Calgary</option>
+                        <option value="68 Falconridge NE Calgary" selected="selected">68 Falconridge NE Calgary</option>
+                        <option value="696 Macleod SW Calgary" selected="selected">696 Macleod SW Calgary</option>
+                        <option value="35 Northland NW Calgary" selected="selected">35 Northland NW Calgary</option>
+                
+                    </select>
+
+                    <!--Search button to make the search-->
+                    <input type="button" value="Search" class="searchBtn" onclick="contact();">
+                    <div id="resultInfo"></div>
+                    
+                </form>
+
+            </div>
+
+        </div>
+
+    </body>
+    
+    <footer>
+    </footer>
+
+    <script src="../js/index.js"></script>
+</html>

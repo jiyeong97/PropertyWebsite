@@ -1,0 +1,52 @@
+<!-- @name: Final Project-Phase2
+  @Course Code: SODV1201
+  @class: Software Development Diploma program.
+  @author: Rajnandani Manocha, Jiyeong Yun
+-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Owner Log-in</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/Icon.jpg">
+        <script src="../js/index.js"></script>
+        <script src="../js/login.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="title">
+                Owner Log-in page
+            </div>
+        </header>
+
+        <!--Div tag is used to get owner info- id, name, email and phone-->
+        <div class="bodyDivLogin">
+
+            <div>User Id</div>
+            <div><input type="text" id="userId1" class="ownerInput"></div>
+
+            <div>Name</div>
+            <div><input type="text" id="ownerName" class="ownerInput"></div>
+
+            <div>E-mail</div>
+            <div><input type="text" id="ownerEmail" class="ownerInput"></div>
+
+            <div>Phone Number</div>
+            <div><input type="text" id="ownerPhone" class="ownerInput"></div>
+
+            <div><input type="button" id="logInBtn" class="btn2" value="Add" onclick="register();"></div>
+            <div><input type="button" id="LogInNext" class="btn2" value="Properties page" onclick="property()"></div>
+
+        </div>
+    </body>
+    
+    <footer>
+        
+        <script>loadFields();</script>
+    </footer>
+</html>

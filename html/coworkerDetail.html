@@ -1,0 +1,52 @@
+<!-- @name: Final Project-Phase2
+  @Course Code: SODV1201
+  @class: Software Development Diploma program.
+  @author: Rajnandani Manocha, Jiyeong Yun
+-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Details about workspace</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/Icon.jpg">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="title">
+                Details about workspace
+            </div>
+        </header>
+
+        <div class="bodyDivDetail">
+
+            <div style="font-weight:900;">Workspace Type(Choose one)</div>
+
+            <!--Various divs are created to enter workspace information-->
+            <div>
+                <input type="checkbox" id="meetingRoom" class="checkBox">Meeting room</br>
+                <input type="checkbox" id="privateOffice" class="checkBox">Private office room</br>
+                <input type="checkbox" id="openWork" class="checkBox">Desk in an open work area</br>
+            </div>
+
+            <div style="font-weight:900; margin-top: 30px;">Smoking / Non-smoking(Choose one)</div>
+
+            <!--Checkboxes are added for smoking or non smoking-->
+            <div>
+                <input type="checkbox" id="smoking" class="checkBox">Smoking</br>
+                <input type="checkbox" id="non-smoking" class="checkBox">Non-Smoking</br>
+            </div>
+
+            <div><input type="button" value="Search" class="aboutBtn" onclick="detail();"></div>
+
+            <div id="detailInfo"></div>
+
+        </div>
+
+        <script src="../js/index.js"></script>
+    </body>
+
+</html>

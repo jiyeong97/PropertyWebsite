@@ -1,0 +1,53 @@
+<!-- @name: Final Project-Phase2
+  @Course Code: SODV1201
+  @class: Software Development Diploma program.
+  @author: Rajnandani Manocha, Jiyeong Yun
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Log-in</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/Icon.jpg">
+        <script src="../js/index.js"></script>
+        <script src="../js/login.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="title">
+                Co-Worker Log-in page
+            </div>
+        </header>
+
+        <!--Main div to get coworker info - id, name and email-->
+        <div class="bodyDivLogin">
+
+            <div>User Id</div>
+            <div><input type="text" id="userId" class="userInput"></div>
+
+            <div>Name</div>
+            <div><input type="text" id="coName" class="userInput"></div>
+
+            <div>E-Mail</div>
+            <div><input type="text" id="coEmail" class="userInput"></div>
+
+            <div>Phone Number</div>
+            <div><input type="text" id="coPhone" class="userInput"></div>
+
+            <!--Button to add coworker info into the existing coworker array-->
+            <div><input type="button" id="logInBtn" class="btn2" value="Add" onclick="registerCo();"></div>
+
+            <!--Button to move to new page- workspace-->
+            <div><input type="button" id="LogInNext" class="btn2" value="Search" onclick="searchWorkspace()"></div>
+
+        </div>
+
+    </body>
+    <footer></footer>
+    <script>loadFieldsCo();</script>
+   
+</html>

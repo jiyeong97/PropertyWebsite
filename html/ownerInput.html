@@ -1,0 +1,100 @@
+<!-- @name: Final Project-Phase2
+  @Course Code: SODV1201
+  @class: Software Development Diploma program.
+  @author: Rajnandani Manocha, Jiyeong Yun
+-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Owner Input</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/Icon.jpg">
+        <script src="../js/property.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="title">
+                Owner Input Page
+            </div>
+        </header>
+
+        <div class="bodyDivOwner">
+
+            <!-- Divs to get property info from user-->
+            <div class="detailInfo">Property Information</div>
+
+            <div>Property ID</div>
+            <div><input type="text" id="propertyID" class="ownerInput1"></div>
+
+            <div>User ID</div>
+            <div><input type="text" id="userID" class="ownerInput1"></div>
+
+            <div>Adrress</div>
+            <div><input type="text" id="ownerAddress" class="ownerInput1"></div>
+
+            <div>Neighborhood</div>
+            <div><input type="text" id="ownerNeighbor" class="ownerInput1"></div>
+
+            <div>Square feet(sqft)</div>
+            <div><input type="text" id="ownerSquare" class="ownerInput1"></div>
+
+            <div>Parking garage</div>
+            <div><input type="text" id="ownerParking" class="ownerInput1"></div>
+
+            <div>Reachable by public transportation</div>
+            <div><input type="text" id="ownerTransport" class="ownerInput1"></div>
+
+            <!--Button that adds user entered property to existing properties-->
+            <div><input type="button" id="addProperty" class="addPropertyBtn" value="Add Property" onclick="addNewProperty();"></div>
+
+        </div>
+
+        <script>loadProperty();</script>
+
+        <div class="bodyDivDetail">
+
+            <!--Workspace information-->
+            <div class="detailInfo">Workspace Information</div>
+            <div style="font-weight:900;">Workspace Type(Choose one)</div>
+
+            <div>
+                <input type="checkbox" id="meetingRoom" class="checkBox">Meeting room</br>
+                <input type="checkbox" id="privateOffice" class="checkBox">Private office room</br>
+                <input type="checkbox" id="openWork" class="checkBox">Desk in an open work area</br>
+            </div>
+
+            <div style="font-weight:900;">Number of seats : <input type="text" id="seats" class="textBox"></div>
+
+            <div>
+                <input type="checkbox" id="smoking" class="checkBox">Smoking</br>
+                <input type="checkbox" id="non-smoking" class="checkBox">Non-Smoking</br>
+            </div>
+
+            <div style="font-weight:900;">
+                Availability date(mm/dd/yyyy) : <input type="text" id="date" class="textBox">
+            </div>
+
+            <div style="font-weight:900;">
+                Lease term : <input type="text" id="lease" class="textBox">
+            </div>
+
+            <div style="font-weight:900;"> 
+                Price : <input type="text" id="price" class="textBox"> CAD
+            </div>
+
+            <div><input type="button" id="addDetail" class="addDetailBtn" value="Complete detail" onclick="addDetail();"></div>
+            <div id="list"></div>
+
+        </div>
+    </body>
+
+    <footer>
+        <script src="../js/index.js"></script>
+    </footer>
+    
+</html>

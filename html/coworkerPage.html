@@ -1,0 +1,57 @@
+<!-- @name: Final Project-Phase2
+  @Course Code: SODV1201
+  @class: Software Development Diploma program.
+  @author: Rajnandani Manocha, Jiyeong Yun
+-->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Coworker Page</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../img/Icon.jpg">
+        <script src="../js/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="title">
+                Coworker Page
+            </div>
+
+        </header>
+
+        <div class="bodyDivCo">
+
+            <form class="searchbar">
+
+                <select name="menu" id="menu" class="select">
+                    <option value="1" selected="selected" id="addressOpt">Address</option>
+                    <option value="2" selected="selected" id="neighborOpt">Neighborhood</option>
+                    <option value="3" selected="selected" id="squareOpt">Square feet</option>
+                    <option value="4" selected="selected" id="parkingOpt">Parking garage</option>
+                    <option value="5" selected="selected" id="transOpt">Public transportation</option>
+                </select>
+
+                <input type="text" placeholder="Search.." id="searchBox" class="searchText">
+                
+                <!--Links to the backend-->
+                <input type="button" value="Search" class="searchBtn" onclick="searchDB();">
+
+            </form>
+
+            <div id="dataResult"></div>
+
+            <div>
+                <div> <input type="button" value="Contact owner" id="contactBtn" class="contactBtn" onclick="window.location.href='contactOwner.html'" > </div>
+                <div> <input type="button" value="About Details" class="aboutBtn" onclick="window.location.href='coworkerDetail.html'"></div>
+            </div>
+
+        </div>
+    </body>
+    <script src="../js/search.js"></script>
+</html>
